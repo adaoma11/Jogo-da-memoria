@@ -62,13 +62,11 @@ addEventListener('click', (e) => {
         toggleHide(e.target);
 
         choice[y] = e.target;
-        console.log(y);
         y++;
 
         if(choice.length > 1) {
 
-            if (choice[0].innerHTML === choice[1].innerHTML) {
-                console.log('Iguais!');
+            if (choice[0].innerHTML === choice[1].innerHTML) {
                 choice[0].style.cssText = "pointer-events:none";
                 choice[1].style.cssText = "pointer-events:none";
                 choice = [];
